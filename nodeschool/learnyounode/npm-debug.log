@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'bl' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'bl', null ]
+6 verbose cache add name=undefined spec="bl" args=["bl",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bl',
+7 verbose parsed url   path: 'bl',
+7 verbose parsed url   href: 'bl' }
+8 silly lockFile f55fb781-bl bl
+9 verbose lock bl /home/vagrant/.npm/f55fb781-bl.lock
+10 silly lockFile f55fb781-bl bl
+11 silly lockFile f55fb781-bl bl
+12 verbose addNamed [ 'bl', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile f83e65ee-bl bl@
+15 verbose lock bl@ /home/vagrant/.npm/f83e65ee-bl.lock
+16 silly addNameRange { name: 'bl', range: '*', hasData: false }
+17 verbose request where is /bl
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id e3c46e3c76170d7b
+20 verbose url raw /bl
+21 verbose url resolving [ 'https://registry.npmjs.org/', './bl' ]
+22 verbose url resolved https://registry.npmjs.org/bl
+23 verbose request where is https://registry.npmjs.org/bl
+24 info trying registry request attempt 1 at 17:30:17
+25 verbose etag "7N9GR61KAE3LA06Q67C1WOQYS"
+26 http GET https://registry.npmjs.org/bl
+27 http 304 https://registry.npmjs.org/bl
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Mon, 08 Dec 2014 08:30:23 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Mon, 08 Dec 2014 08:27:26 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"7N9GR61KAE3LA06Q67C1WOQYS"',
+28 silly registry.get     age: '51',
+28 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '23',
+28 silly registry.get     'x-timer': 'S1418027423.439916,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/bl from cache
+30 silly addNameRange number 2 { name: 'bl', range: '*', hasData: true }
+31 silly addNameRange versions [ 'bl',
+31 silly addNameRange   [ '0.0.0',
+31 silly addNameRange     '0.1.0',
+31 silly addNameRange     '0.1.1',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.4.1',
+31 silly addNameRange     '0.4.2',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.8.0',
+31 silly addNameRange     '0.8.1',
+31 silly addNameRange     '0.8.2',
+31 silly addNameRange     '0.9.0',
+31 silly addNameRange     '0.9.1',
+31 silly addNameRange     '0.9.2',
+31 silly addNameRange     '0.9.3' ] ]
+32 verbose addNamed [ 'bl', '0.9.3' ]
+33 verbose addNamed [ '0.9.3', '0.9.3' ]
+34 silly lockFile eff7bced-bl-0-9-3 bl@0.9.3
+35 verbose lock bl@0.9.3 /home/vagrant/.npm/eff7bced-bl-0-9-3.lock
+36 silly lockFile 95e20b5f-gistry-npmjs-org-bl-bl-0-9-3-tgz https://registry.npmjs.org/bl/-/bl-0.9.3.tgz
+37 verbose lock https://registry.npmjs.org/bl/-/bl-0.9.3.tgz /home/vagrant/.npm/95e20b5f-gistry-npmjs-org-bl-bl-0-9-3-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/bl/-/bl-0.9.3.tgz',
+38 verbose addRemoteTarball   'c41eff3e7cb31bde107c8f10076d274eff7f7d44' ]
+39 info retry fetch attempt 1 at 17:30:23
+40 verbose fetch to= /tmp/npm-7343-o0Czy3ut/registry.npmjs.org/bl/-/bl-0.9.3.tgz
+41 http GET https://registry.npmjs.org/bl/-/bl-0.9.3.tgz
+42 http 200 https://registry.npmjs.org/bl/-/bl-0.9.3.tgz
+43 silly lockFile 95e20b5f-gistry-npmjs-org-bl-bl-0-9-3-tgz https://registry.npmjs.org/bl/-/bl-0.9.3.tgz
+44 silly lockFile 95e20b5f-gistry-npmjs-org-bl-bl-0-9-3-tgz https://registry.npmjs.org/bl/-/bl-0.9.3.tgz
+45 silly lockFile eff7bced-bl-0-9-3 bl@0.9.3
+46 silly lockFile eff7bced-bl-0-9-3 bl@0.9.3
+47 silly lockFile f83e65ee-bl bl@
+48 silly lockFile f83e65ee-bl bl@
+49 error Error: EACCES, mkdir '/home/vagrant/.npm/bl/0.9.3'
+49 error  { [Error: EACCES, mkdir '/home/vagrant/.npm/bl/0.9.3'] errno: 3, code: 'EACCES', path: '/home/vagrant/.npm/bl/0.9.3' }
+50 error Please try running this command again as root/Administrator.
+51 error System Linux 3.13.0-40-generic
+52 error command "/usr/bin/node" "/usr/bin/npm" "install" "bl"
+53 error cwd /vagrant/nodeschool/learnyounode
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /home/vagrant/.npm/bl/0.9.3
+57 error code EACCES
+58 error errno 3
+59 error stack Error: EACCES, mkdir '/home/vagrant/.npm/bl/0.9.3'
+60 verbose exit [ 3, true ]
