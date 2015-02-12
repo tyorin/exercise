@@ -73,3 +73,60 @@
 //  » To execute your program in a test environment, run:
 //    `functional-javascript run program.js`.
 //  » To verify your program, run: `functional-javascript verify program.js`.
+
+
+
+var util = require('util');
+// module.exports = function curryN (fn, n) {
+//   // util.debug(fn);
+//   // util.debug(n);
+//   // util.debug(fn.length);
+//   if (n == undefined) {
+//     n = fn.length;
+//   }
+//   if (n == 3) {
+//     return function (c) {
+//       return function (b) {
+//         return function (a) {
+//           return fn(a, b, c);
+//         }
+//       }
+//     }
+//   } else if (n == 5) {
+//     return function (a) {
+//       return function (b) {
+//         return function (c) {
+//           return function (d) {
+//             return function (e) {
+//               return fn(a, b, c, d, e);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// };
+
+function curryN(fn, n) {
+  // If `n` argument was omitted, use the function .length property.
+  if (typeof n !== 'number') n = fn.length
+
+  function getCurriedFn(prev) {
+    return function(arg) {
+      // Concat the just-specified argument with the array of
+      // previously-specified arguments.
+      var args = prev.concat(arg)
+      // Not all arguments have been satisfied yet, so return a curried
+      // version of the original function.
+      if (args.length < n) return getCurriedFn(args)
+      // Otherwise, invoke the original function with the arguments and
+      // return its value.
+      else return fn.apply(this, args)
+    };
+  }
+
+  // Return a curried version of the original function.
+  return getCurriedFn([])
+}
+
+module.exports = curryN
