@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.10.2",
+    "boom": "^2.6.1",
     "express": "^4.11.1",
     "handlebars": "^2.0.0",
     "hapi": "^8.1.0",
