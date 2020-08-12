@@ -12,7 +12,7 @@
     "body-parser": "^1.10.2",
     "boom": "^2.6.1",
     "express": "^4.11.1",
-    "handlebars": "^2.0.0",
+    "handlebars": "^4.7.6",
     "hapi": "^8.1.0",
     "jade": "^1.9.1",
     "joi": "^5.1.0",
